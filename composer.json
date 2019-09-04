@@ -1,0 +1,24 @@
+{
+    "name": "vspl/cwf",
+    "description": "Core Web Framework",
+    "keywords": ["cwf", "framework", "coreERP"],
+    "homepage": "http://www.vishwayon.com/",
+    "type": "framework",
+    "license": "BSD-3-Clause",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.3.0",
+        "yiisoft/yii2": "~2.0.22"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "autoload": {
+        "psr-4" : {
+            "cwf\\": "src/"
+        }
+    },
+    "extra": {
+        "bootstrap": "cwf\\CwfConfiguration"
+    }
+}
